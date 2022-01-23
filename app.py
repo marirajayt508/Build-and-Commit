@@ -10,8 +10,10 @@ def index():
 def build():
    system("cd..'")
    system("git add *")
-   system("dir")
    system("git commit -m 'Commited'")
+   system("git remote add origin https://github.com/marirajayt508/Build-and-Commit.git")
+   system("git branch -M main")
+   system("git push -u origin main")
    return "Build Started"
 
 if __name__ == '__main__':
