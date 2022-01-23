@@ -8,7 +8,8 @@ def index():
 
 @app.route('/build')
 def build():
-   system("cd..'")
+   system("cd Projects")
+   system("git init")
    system("git add *")
    system("git commit -m 'Commited'")
    system("git remote add origin https://github.com/marirajayt508/Build-and-Commit.git")
